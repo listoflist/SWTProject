@@ -29,7 +29,7 @@ public class TestBingTestCase extends SeleneseTestCase {
     @BeforeClass
     public void setup() {
         selenium = new DefaultSelenium("localhost", 4444, "*firefox",
-                "http://cn.bing.com/");
+                "http://www.bing.com/");
         System.out.println("Starting selenium.");
         selenium.start();
         utils = new SeleniumUtils(selenium);
