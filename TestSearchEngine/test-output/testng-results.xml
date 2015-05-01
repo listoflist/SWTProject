@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Test Search Engine" duration-ms="58329" started-at="2015-05-01T18:02:24Z" finished-at="2015-05-01T18:03:23Z">
+    <groups>
+    </groups>
+    <test name="Test Google" duration-ms="27127" started-at="2015-05-01T18:02:24Z" finished-at="2015-05-01T18:02:52Z">
+      <class name="tse.testCases.TestGoogleTestCase">
+        <test-method status="PASS" signature="setup()[pri:0, instance:null(tse.testCases.TestGoogleTestCase)]" name="setup" is-config="true" duration-ms="4636" started-at="2015-05-01T13:02:24Z" finished-at="2015-05-01T13:02:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="testGoogle_1(java.lang.String)[pri:0, instance:null(tse.testCases.TestGoogleTestCase)]" name="testGoogle_1" duration-ms="10955" started-at="2015-05-01T13:02:29Z" finished-at="2015-05-01T13:02:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/resources/google_se_para_1.xml]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGoogle_1 -->
+        <test-method status="PASS" signature="testGoogle_2(java.lang.String)[pri:0, instance:null(tse.testCases.TestGoogleTestCase)]" name="testGoogle_2" duration-ms="11450" started-at="2015-05-01T13:02:40Z" finished-at="2015-05-01T13:02:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/resources/google_se_para_2.xml]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGoogle_2 -->
+        <test-method status="PASS" signature="stop()[pri:0, instance:null(tse.testCases.TestGoogleTestCase)]" name="stop" is-config="true" duration-ms="69" started-at="2015-05-01T13:02:52Z" finished-at="2015-05-01T13:02:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stop -->
+      </class> <!-- tse.testCases.TestGoogleTestCase -->
+    </test> <!-- Test Google -->
+    <test name="Test Baidu" duration-ms="16608" started-at="2015-05-01T18:02:52Z" finished-at="2015-05-01T18:03:08Z">
+      <class name="tse.testCases.TestBaiduTestCase">
+        <test-method status="PASS" signature="setup()[pri:0, instance:null(tse.testCases.TestBaiduTestCase)]" name="setup" is-config="true" duration-ms="4063" started-at="2015-05-01T13:02:52Z" finished-at="2015-05-01T13:02:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="testBaidu_1(java.lang.String)[pri:0, instance:null(tse.testCases.TestBaiduTestCase)]" name="testBaidu_1" duration-ms="12477" started-at="2015-05-01T13:02:56Z" finished-at="2015-05-01T13:03:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/resources/baidu_se_para_1.xml]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBaidu_1 -->
+        <test-method status="PASS" signature="stop()[pri:0, instance:null(tse.testCases.TestBaiduTestCase)]" name="stop" is-config="true" duration-ms="67" started-at="2015-05-01T13:03:08Z" finished-at="2015-05-01T13:03:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stop -->
+      </class> <!-- tse.testCases.TestBaiduTestCase -->
+    </test> <!-- Test Baidu -->
+    <test name="Test Bing" duration-ms="14581" started-at="2015-05-01T18:03:08Z" finished-at="2015-05-01T18:03:23Z">
+      <class name="tse.testCases.TestBingTestCase">
+        <test-method status="PASS" signature="setup()[pri:0, instance:null(tse.testCases.TestBingTestCase)]" name="setup" is-config="true" duration-ms="4019" started-at="2015-05-01T13:03:08Z" finished-at="2015-05-01T13:03:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="testBing_1(java.lang.String)[pri:0, instance:null(tse.testCases.TestBingTestCase)]" name="testBing_1" duration-ms="10495" started-at="2015-05-01T13:03:12Z" finished-at="2015-05-01T13:03:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/resources/bing_se_para_1.xml]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBing_1 -->
+        <test-method status="PASS" signature="stop()[pri:0, instance:null(tse.testCases.TestBingTestCase)]" name="stop" is-config="true" duration-ms="65" started-at="2015-05-01T13:03:23Z" finished-at="2015-05-01T13:03:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stop -->
+      </class> <!-- tse.testCases.TestBingTestCase -->
+    </test> <!-- Test Bing -->
+  </suite> <!-- Test Search Engine -->
+</testng-results>
