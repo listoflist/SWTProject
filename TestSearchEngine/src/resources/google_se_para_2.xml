@@ -2,10 +2,10 @@
 <fvt_element>
 	<!-- Search String-->
 	<arg id="googleSearchTxtField">
-		<value>IBM</value>
+		<value>utexas</value>
 	</arg>
 	
 	<arg id="verify-String">
-		<value>IBM(国际商业机器公司)中国网站</value>
+		<value>University of Texas at Austin</value>
 	</arg>
 </fvt_element>
