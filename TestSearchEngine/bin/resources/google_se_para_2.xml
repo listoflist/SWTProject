@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fvt_element>
+	<!-- Search String-->
+	<arg id="googleSearchTxtField">
+		<value>IBM</value>
+	</arg>
+	
+	<arg id="verify-String">
+		<value>IBM(国际商业机器公司)中国网站</value>
+	</arg>
+</fvt_element>
