@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fvt_element>
+	<!-- Search String-->
+	<arg id="googleSearchTxtField">
+		<value>developerworks</value>
+	</arg>
+	
+	<arg id="verify-String">
+		<value>developerWorks 中国</value>
+	</arg>
+</fvt_element>

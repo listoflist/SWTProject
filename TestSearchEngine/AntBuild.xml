@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="ISD Auto Test" default="run_test">
+
+	<property name="src" location="src" />
+	<property name="lib" location="lib" />
+	<property name="build" location="build" />
+	<property name="rsc" location="${src}/resources" />
+
+	<path id="CP">
+		<pathelement location="${lib}/selenium-server.jar" />
+		<pathelement location="${lib}/selenium-java-client-driver.jar" />
+		<pathelement location="${lib}/testng-5.10-jdk15.jar" />
+		<pathelement location="${lib}/junit.jar" />
+	</path>
+
+	<!-- ================================= 
+          target: Initialization              
+         ================================= -->
+	<target name="init" description="description">
+		<tstamp />
+		<echo message="init......" />
+		<mkdir dir="${build}" />
+		
+		<copy tofile="${build}/testng.xml">
+			<fileset file="testng.xml" />
+		</copy>
+		
+		<copy todir="${build}/tse/appObjects">
+			<fileset dir="${src}/tse/appObjects" />
+		</copy>
+	</target>
+
+
+	<target name="run_test" description="Start Proxy ; Run TestNG ; Stop Proxy">
+		<parallel>
+			<antcall target="start-server" />
+
+			<sequential>
+				<echo taskname="waitfor" message="Wait for proxy server launch" />
+				<waitfor maxwait="2" maxwaitunit="minute" checkevery="100">
+					<http url="http://localhost:4444/selenium-server/driver/?cmd=testComplete" />
+					<!-- selenium server url-->
+				</waitfor>
+				<antcall target="run_testNG" />
+				<antcall target="stop-server" />
+			</sequential>
+		</parallel>
+	</target>
+
+	<!-- COMPILE PROJECT-->
+	<target name="compile" depends="init">
+		<echo message="compiling project" />
+		<javac debug="true" source="1.5" classpathref="CP" srcdir="${src}" destdir="${build}" />
+	</target>
+
+
+	<!-- RUN TESTS-->
+	<taskdef name="testng" classname="com.beust.testng.TestNGAntTask" classpathref="CP" />
+	<path id="runpath">
+		<path refid="CP" />
+		<pathelement location="${build}" />
+	</path>
+
+	<target name="run_testNG" depends="compile">
+		<echo message="running tests" />
+		<testng classpathref="runpath" outputDir="test-output" haltOnfailure="false" useDefaultListeners="true">
+			<xmlfileset dir="${build}" includes="testng.xml" />
+			<sysproperty key="org.uncommons.reportng.title" value="My Test Report" />
+			<jvmarg value="-ea" />
+		</testng>
+	</target>
+
+	<!-- START SERVER-->
+	<property name="ARGS" value="-Dibm.stream.nio=true -log selenium.log  -browserSideLog" />
+	<!-- firefox profile directory -->
+	<target name="start-server">
+		<echo message="Starting server..." />
+		<java jar="${lib}/selenium-server.jar" fork="true" spawn="true">
+			<arg line="-timeout 30" />
+			<arg line="${ARGS}" />
+		</java>
+		<echo message="Server is started." />
+	</target>
+
+	<!-- STOP SERVER-->
+	<target name="stop-server">
+		<!-- selenium server url-->
+		<get taskname="selenium-shutdown" src="http://localhost:4444/selenium-server/driver/?cmd=shutDownSeleniumServer" dest="result.txt" ignoreerrors="true" />
+		<echo taskname="selenium-shutdown" message="DGF Errors during shutdown are expected" />
+	</target>
+
+	<target name="clean" description="clean up">
+		<!-- Delete the ${build} and ${dist} directory trees -->
+		<delete dir="${build}" />
+	</target>
+
+
+</project>

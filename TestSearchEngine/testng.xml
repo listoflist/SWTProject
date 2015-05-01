@@ -1,0 +1,26 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="TestSearchEngines" verbose="1">
+	<parameter name="google_se_para_1" value="/src/resources/google_se_para_1.xml"></parameter>
+	<parameter name="google_se_para_2" value="/src/resources/google_se_para_2.xml"></parameter>
+	<parameter name="baidu_se_para_1" value="/src/resources/baidu_se_para_1.xml"></parameter>
+	<parameter name="bing_se_para_1" value="/src/resources/bing_se_para_1.xml"></parameter>
+	
+	<test name="TestGoogle">
+ 	 <classes>
+ 	 	<class name="tse.testCases.TestGoogleTestCase"/>
+ 	 </classes>
+	</test>
+	
+	<test name="TestBaidu">
+ 	 <classes>
+ 	 	<class name="tse.testCases.TestBaiduTestCase"/>
+ 	 </classes>
+	</test>
+	
+	<test name="TestBing">
+ 	 <classes>
+ 	 	<class name="tse.testCases.TestBingTestCase"/>
+ 	 </classes>
+	</test>
+</suite>
