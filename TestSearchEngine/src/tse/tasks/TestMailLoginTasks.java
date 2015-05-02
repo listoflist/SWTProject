@@ -55,8 +55,6 @@ public class TestMailLoginTasks {
     }
 
     public void verifyResult(HashMap<String, Object> paraMap) {
-//        stc.verifyTrue(selenium.getTitle().matches((String) paraMap
-//                .get(TestMailLoginConstants.VERIFY_STRING)));
         stc.verifyTrue(selenium.isTextPresent((String) paraMap
                 .get(TestMailLoginConstants.VERIFY_STRING)));
     }
