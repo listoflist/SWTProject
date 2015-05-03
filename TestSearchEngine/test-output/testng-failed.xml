@@ -6,12 +6,102 @@
   <parameter name="baidu_se_para_1" value="/resources/baidu_se_para_1.xml"/>
   <parameter name="mail_login_se_para_1" value="/resources/mail_login_se_para_1.xml"/>
   <parameter name="bing_se_para_1" value="/resources/bing_se_para_1.xml"/>
-  <test name="Test Mail Login(failed)">
+  <test name="Test Google(failed)">
     <classes>
+      <class name="tse.testCases.TestBingTestCase">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tse.testCases.TestBingTestCase -->
+      <class name="tse.testCases.TestGoogleTestCase">
+        <methods>
+          <include name="setup"/>
+          <include name="testGoogle_2"/>
+          <include name="testGoogle_1"/>
+        </methods>
+      </class> <!-- tse.testCases.TestGoogleTestCase -->
+      <class name="tse.testCases.TestBaiduTestCase">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tse.testCases.TestBaiduTestCase -->
       <class name="tse.testCases.TestMailLoginTestCase">
         <methods>
-          <include name="stop"/>
-          <include name="testMailLogin_1" invocation-numbers="0"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tse.testCases.TestMailLoginTestCase -->
+    </classes>
+  </test> <!-- Test Google(failed) -->
+  <test name="Test Baidu(failed)">
+    <classes>
+      <class name="tse.testCases.TestBingTestCase">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tse.testCases.TestBingTestCase -->
+      <class name="tse.testCases.TestGoogleTestCase">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tse.testCases.TestGoogleTestCase -->
+      <class name="tse.testCases.TestBaiduTestCase">
+        <methods>
+          <include name="testBaidu_1"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tse.testCases.TestBaiduTestCase -->
+      <class name="tse.testCases.TestMailLoginTestCase">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tse.testCases.TestMailLoginTestCase -->
+    </classes>
+  </test> <!-- Test Baidu(failed) -->
+  <test name="Test Bing(failed)">
+    <classes>
+      <class name="tse.testCases.TestBingTestCase">
+        <methods>
+          <include name="setup"/>
+          <include name="testBing_1"/>
+        </methods>
+      </class> <!-- tse.testCases.TestBingTestCase -->
+      <class name="tse.testCases.TestGoogleTestCase">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tse.testCases.TestGoogleTestCase -->
+      <class name="tse.testCases.TestBaiduTestCase">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tse.testCases.TestBaiduTestCase -->
+      <class name="tse.testCases.TestMailLoginTestCase">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tse.testCases.TestMailLoginTestCase -->
+    </classes>
+  </test> <!-- Test Bing(failed) -->
+  <test name="Test Mail Login(failed)">
+    <classes>
+      <class name="tse.testCases.TestBingTestCase">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tse.testCases.TestBingTestCase -->
+      <class name="tse.testCases.TestGoogleTestCase">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tse.testCases.TestGoogleTestCase -->
+      <class name="tse.testCases.TestBaiduTestCase">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tse.testCases.TestBaiduTestCase -->
+      <class name="tse.testCases.TestMailLoginTestCase">
+        <methods>
+          <include name="testMailLogin_1"/>
           <include name="setup"/>
         </methods>
       </class> <!-- tse.testCases.TestMailLoginTestCase -->

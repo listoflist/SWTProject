@@ -53,26 +53,26 @@ public class SearchEngineSuite extends SeleneseTestCase {
         para.put("bing_se_para_1", "/resources/bing_se_para_1.xml");
         para.put("mail_login_se_para_1", "/resources/mail_login_se_para_1.xml");
         suite.setParameters(para);
-//        //google test tag
-//        XmlTest testGoogle = new XmlTest(suite);
-//        testGoogle.setName("Test Google");
-//        List<XmlClass> googleClasses = new ArrayList<XmlClass>();
-//        googleClasses.add(new XmlClass(TestGoogleTestCase.class));
-//        testGoogle.setXmlClasses(googleClasses);
-//        
-//        //baidu test tag
-//        XmlTest testBaidu = new XmlTest(suite);
-//        testBaidu.setName("Test Baidu");
-//        List<XmlClass> baiduClasses = new ArrayList<XmlClass>();
-//        baiduClasses.add(new XmlClass(TestBaiduTestCase.class));
-//        testBaidu.setXmlClasses(baiduClasses);
-//        
-//        //bing test tag
-//        XmlTest testBing = new XmlTest(suite);
-//        testBing.setName("Test Bing");
-//        List<XmlClass> bingClasses = new ArrayList<XmlClass>();
-//        bingClasses.add(new XmlClass(TestBingTestCase.class));
-//        testBing.setXmlClasses(bingClasses);
+        //google test tag
+        XmlTest testGoogle = new XmlTest(suite);
+        testGoogle.setName("Test Google");
+        List<XmlClass> googleClasses = new ArrayList<XmlClass>();
+        googleClasses.add(new XmlClass(TestGoogleTestCase.class));
+        testGoogle.setXmlClasses(googleClasses);
+        
+        //baidu test tag
+        XmlTest testBaidu = new XmlTest(suite);
+        testBaidu.setName("Test Baidu");
+        List<XmlClass> baiduClasses = new ArrayList<XmlClass>();
+        baiduClasses.add(new XmlClass(TestBaiduTestCase.class));
+        testBaidu.setXmlClasses(baiduClasses);
+        
+        //bing test tag
+        XmlTest testBing = new XmlTest(suite);
+        testBing.setName("Test Bing");
+        List<XmlClass> bingClasses = new ArrayList<XmlClass>();
+        bingClasses.add(new XmlClass(TestBingTestCase.class));
+        testBing.setXmlClasses(bingClasses);
         
         //mail login tag
         XmlTest testMailLogin = new XmlTest(suite);
