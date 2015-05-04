@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fvt_element>
+	<!-- Search String-->
+	<arg id="mailLoginTxtField1">
+		<value>seleniumtesting15</value>
+	</arg>
+	<arg id="mailLoginTxtField2">
+	    <value>swtesting</value>   
+	</arg>
+	<arg id="verify-String">
+		<value>^Account: seleniumtesting15@gmail.com[\\s\\S]*$</value>
+	</arg>
+</fvt_element>

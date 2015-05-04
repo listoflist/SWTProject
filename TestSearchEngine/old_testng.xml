@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="TestSearchEngines" verbose="1">
+
+<!--detail parameters in the testng.xml-->
+	<parameter name="url" value="http://www.google.cn"></parameter>
+	<parameter name="query-string" value="developerworks"></parameter>
+	<parameter name="btn-id" value="btnG"></parameter>
+	<parameter name="txt-id" value="q"></parameter>
+	<parameter name="verify-String" value="developerWorks 中国"></parameter>
+		
+	<test name="TestGoogle">
+ 	 <classes>
+ 	 	<class name="tse.testCases.TestSearchEngine"/>
+ 	 </classes>
+	</test>
+</suite>
