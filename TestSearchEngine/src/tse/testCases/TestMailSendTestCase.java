@@ -11,14 +11,15 @@ import org.testng.annotations.Test;
 import com.thoughtworks.selenium.DefaultSelenium;
 import com.thoughtworks.selenium.SeleneseTestCase;
 import tse.tasks.TestMailLoginTasks;
+import tse.tasks.TestMailSendTasks;
 import tse.utilities.SeleniumUtils;
 import tse.utilities.XMLParser;
 
-public class TestMailLoginTestCase extends SeleneseTestCase {
+public class TestMailSendTestCase extends SeleneseTestCase {
 
     private HashMap<String, Object> paraMap;
 
-    private TestMailLoginTasks      tgTasks;
+    private TestMailSendTasks      tgTasks;
 
     private SeleniumUtils           utils;
 
@@ -33,12 +34,12 @@ public class TestMailLoginTestCase extends SeleneseTestCase {
         System.out.println("Starting selenium.");
         selenium.start();
         utils = new SeleniumUtils(selenium);
-        tgTasks = new TestMailLoginTasks(utils);
+        tgTasks = new TestMailSendTasks(utils);
     }
 
-    @Parameters( { "mail_login_se_para_1" })
+    @Parameters( { "mail_send_se_para_1" })
     @Test
-    public void testMailLogin(String paraFile) {
+    public void testMailSend(String paraFile) {
         paraMap = (HashMap<String, Object>) XMLParser.getInstance()
                 .parserXml(paraFile);
         System.out.println("the paraMap is" + paraMap);
@@ -46,8 +47,11 @@ public class TestMailLoginTestCase extends SeleneseTestCase {
         tgTasks.openSite();
         tgTasks.typeLoginTxtField(paraMap);
         tgTasks.clickLoginBtn();
-        tgTasks.verifyResult(paraMap);
-        utils.pause(10000);
+        tgTasks.clickCompose();
+        tgTasks.typeMailField(paraMap);
+        tgTasks.clickSendBtn();
+        //tgTasks.verifyResult(paraMap);
+        //utils.pause(10000);
     }
     
     @AfterClass

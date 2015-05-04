@@ -1,97 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="5" passed="5">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Test Search Engine" duration-ms="74022" started-at="2015-05-03T03:03:43Z" finished-at="2015-05-03T03:04:57Z">
+  <suite name="Test Search Engine" duration-ms="16669" started-at="2015-05-04T02:31:52Z" finished-at="2015-05-04T02:32:08Z">
     <groups>
     </groups>
-    <test name="Test Google" duration-ms="28272" started-at="2015-05-03T03:03:43Z" finished-at="2015-05-03T03:04:12Z">
-      <class name="tse.testCases.TestGoogleTestCase">
-        <test-method status="PASS" signature="setup()[pri:0, instance:null(tse.testCases.TestGoogleTestCase)]" name="setup" is-config="true" duration-ms="5162" started-at="2015-05-02T22:03:43Z" finished-at="2015-05-02T22:03:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="testGoogle_1(java.lang.String)[pri:0, instance:null(tse.testCases.TestGoogleTestCase)]" name="testGoogle_1" duration-ms="10965" started-at="2015-05-02T22:03:48Z" finished-at="2015-05-02T22:03:59Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[/resources/google_se_para_1.xml]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testGoogle_1 -->
-        <test-method status="PASS" signature="testGoogle_2(java.lang.String)[pri:0, instance:null(tse.testCases.TestGoogleTestCase)]" name="testGoogle_2" duration-ms="12006" started-at="2015-05-02T22:03:59Z" finished-at="2015-05-02T22:04:11Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[/resources/google_se_para_2.xml]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testGoogle_2 -->
-        <test-method status="PASS" signature="stop()[pri:0, instance:null(tse.testCases.TestGoogleTestCase)]" name="stop" is-config="true" duration-ms="121" started-at="2015-05-02T22:04:11Z" finished-at="2015-05-02T22:04:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- stop -->
-      </class> <!-- tse.testCases.TestGoogleTestCase -->
-    </test> <!-- Test Google -->
-    <test name="Test Baidu" duration-ms="16387" started-at="2015-05-03T03:04:12Z" finished-at="2015-05-03T03:04:28Z">
-      <class name="tse.testCases.TestBaiduTestCase">
-        <test-method status="PASS" signature="setup()[pri:0, instance:null(tse.testCases.TestBaiduTestCase)]" name="setup" is-config="true" duration-ms="4005" started-at="2015-05-02T22:04:12Z" finished-at="2015-05-02T22:04:16Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="testBaidu_1(java.lang.String)[pri:0, instance:null(tse.testCases.TestBaiduTestCase)]" name="testBaidu_1" duration-ms="12274" started-at="2015-05-02T22:04:16Z" finished-at="2015-05-02T22:04:28Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[/resources/baidu_se_para_1.xml]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testBaidu_1 -->
-        <test-method status="PASS" signature="stop()[pri:0, instance:null(tse.testCases.TestBaiduTestCase)]" name="stop" is-config="true" duration-ms="108" started-at="2015-05-02T22:04:28Z" finished-at="2015-05-02T22:04:28Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- stop -->
-      </class> <!-- tse.testCases.TestBaiduTestCase -->
-    </test> <!-- Test Baidu -->
-    <test name="Test Bing" duration-ms="14602" started-at="2015-05-03T03:04:28Z" finished-at="2015-05-03T03:04:43Z">
-      <class name="tse.testCases.TestBingTestCase">
-        <test-method status="PASS" signature="setup()[pri:0, instance:null(tse.testCases.TestBingTestCase)]" name="setup" is-config="true" duration-ms="4051" started-at="2015-05-02T22:04:28Z" finished-at="2015-05-02T22:04:32Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="testBing_1(java.lang.String)[pri:0, instance:null(tse.testCases.TestBingTestCase)]" name="testBing_1" duration-ms="10478" started-at="2015-05-02T22:04:32Z" finished-at="2015-05-02T22:04:42Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[/resources/bing_se_para_1.xml]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testBing_1 -->
-        <test-method status="PASS" signature="stop()[pri:0, instance:null(tse.testCases.TestBingTestCase)]" name="stop" is-config="true" duration-ms="72" started-at="2015-05-02T22:04:42Z" finished-at="2015-05-02T22:04:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- stop -->
-      </class> <!-- tse.testCases.TestBingTestCase -->
-    </test> <!-- Test Bing -->
-    <test name="Test Mail Login" duration-ms="14739" started-at="2015-05-03T03:04:43Z" finished-at="2015-05-03T03:04:57Z">
+    <test name="Test Mail Login" duration-ms="16669" started-at="2015-05-04T02:31:52Z" finished-at="2015-05-04T02:32:08Z">
       <class name="tse.testCases.TestMailLoginTestCase">
-        <test-method status="PASS" signature="setup()[pri:0, instance:null(tse.testCases.TestMailLoginTestCase)]" name="setup" is-config="true" duration-ms="3986" started-at="2015-05-02T22:04:43Z" finished-at="2015-05-02T22:04:47Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:null(tse.testCases.TestMailLoginTestCase)]" name="setup" is-config="true" duration-ms="5622" started-at="2015-05-03T21:31:52Z" finished-at="2015-05-03T21:31:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="testMailLogin_1(java.lang.String)[pri:0, instance:null(tse.testCases.TestMailLoginTestCase)]" name="testMailLogin_1" duration-ms="10672" started-at="2015-05-02T22:04:47Z" finished-at="2015-05-02T22:04:57Z">
+        <test-method status="PASS" signature="testMailLogin(java.lang.String)[pri:0, instance:null(tse.testCases.TestMailLoginTestCase)]" name="testMailLogin" duration-ms="10931" started-at="2015-05-03T21:31:57Z" finished-at="2015-05-03T21:32:08Z">
           <params>
             <param index="0">
               <value>
@@ -101,8 +21,8 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testMailLogin_1 -->
-        <test-method status="PASS" signature="stop()[pri:0, instance:null(tse.testCases.TestMailLoginTestCase)]" name="stop" is-config="true" duration-ms="79" started-at="2015-05-02T22:04:57Z" finished-at="2015-05-02T22:04:57Z">
+        </test-method> <!-- testMailLogin -->
+        <test-method status="PASS" signature="stop()[pri:0, instance:null(tse.testCases.TestMailLoginTestCase)]" name="stop" is-config="true" duration-ms="101" started-at="2015-05-03T21:32:08Z" finished-at="2015-05-03T21:32:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stop -->

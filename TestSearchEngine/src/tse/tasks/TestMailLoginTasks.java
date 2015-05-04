@@ -33,10 +33,10 @@ public class TestMailLoginTasks {
 
     public void typeLoginTxtField(HashMap<String, Object> paraMap) {
         System.out.println("the elemMap is" + elemMap + "..............");
-        stc.verifyTrue(utils.waitForElement((String) elemMap
-                .get(TestMailLoginConstants.MAIL_LOGIN_TXT_FIELD_1), 30));
-        stc.verifyTrue(utils.waitForElement((String) elemMap
-        		.get(TestMailLoginConstants.MAIL_LOGIN_TXT_FIELD_2), 30));
+//        stc.verifyTrue(utils.waitForElement((String) elemMap
+//                .get(TestMailLoginConstants.MAIL_LOGIN_TXT_FIELD_1), 30));
+//        stc.verifyTrue(utils.waitForElement((String) elemMap
+//        		.get(TestMailLoginConstants.MAIL_LOGIN_TXT_FIELD_2), 30));
         selenium.type((String) elemMap
                 .get(TestMailLoginConstants.MAIL_LOGIN_TXT_FIELD_1),
                 (String) paraMap
@@ -48,8 +48,8 @@ public class TestMailLoginTasks {
     }
 
     public void clickLoginBtn() {
-        stc.verifyTrue(utils.waitForElement((String) elemMap
-                .get(TestMailLoginConstants.MAIL_LOGIN_BTN), 30));
+//        stc.verifyTrue(utils.waitForElement((String) elemMap
+//                .get(TestMailLoginConstants.MAIL_LOGIN_BTN), 30));
         selenium.click((String) elemMap
                 .get(TestMailLoginConstants.MAIL_LOGIN_BTN));
     }

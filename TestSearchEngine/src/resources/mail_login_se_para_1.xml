@@ -2,10 +2,10 @@
 <fvt_element>
 	<!-- Search String-->
 	<arg id="mailLoginTxtField1">
-		<value>seleniumtesting15</value>
+		<value>swt2015spring</value>
 	</arg>
 	<arg id="mailLoginTxtField2">
-	    <value>swtesting</value>   
+	    <value>software2015</value>   
 	</arg>
 	<arg id="verify-String">
 		<value>^Account: seleniumtesting15@gmail.com[\\s\\S]*$</value>
