@@ -4,7 +4,7 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="lib" path="/Users/Lucifer/Documents/GraduateStudy/Project/SWTProject/TestSearchEngine/lib/selenium-2.45.0/selenium-java-2.45.0.jar"/>
-	<classpathentry kind="lib" path="/Users/Lucifer/Documents/GraduateStudy/Project/SWTProject/TestSearchEngine/lib/selenium-server-standalone-2.45.0.jar"/>
+	<classpathentry kind="lib" path="C:/Java/workspace/TestSearchEngine/selenium-server-standalone-2.45.0.jar"/>
+	<classpathentry kind="lib" path="C:/Java/workspace/TestSearchEngine/selenium-2.45.0/selenium-java-2.45.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

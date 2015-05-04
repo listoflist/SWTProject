@@ -29,7 +29,8 @@ public class TestMailLoginTestCase extends SeleneseTestCase {
     @BeforeClass
     public void setup() {
         selenium = new DefaultSelenium("localhost", 4444, "*firefox",
-                "https://accounts.google.com/");
+        		"https://mail.google.com/");
+        	//                "https://accounts.google.com/");
         System.out.println("Starting selenium.");
         selenium.start();
         utils = new SeleniumUtils(selenium);

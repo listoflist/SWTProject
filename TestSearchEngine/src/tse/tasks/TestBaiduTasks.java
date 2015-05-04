@@ -35,10 +35,8 @@ public class TestBaiduTasks {
         stc.verifyTrue(utils.waitForElement((String) elemMap
                 .get(TestBaiduConstants.BAIDU_SEARCH_TXT_FIELD), 30));
         selenium
-                .type((String) elemMap
-                        .get(TestBaiduConstants.BAIDU_SEARCH_TXT_FIELD),
-                        (String) paraMap
-                                .get(TestBaiduConstants.BAIDU_SEARCH_TXT_FIELD));
+                .type((String) elemMap.get(TestBaiduConstants.BAIDU_SEARCH_TXT_FIELD),
+                      (String) paraMap.get(TestBaiduConstants.BAIDU_SEARCH_TXT_FIELD));
     }
 
     public void clickSearchBtn() {
