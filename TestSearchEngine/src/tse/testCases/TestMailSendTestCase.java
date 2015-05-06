@@ -40,7 +40,7 @@ public class TestMailSendTestCase extends SeleneseTestCase {
 
     @Parameters( { "mail_send_para_1" })
     @Test
-    public void testMailLogin(String paraFile) {
+    public void testMailSend(String paraFile) {
         paraMap = (HashMap<String, Object>) XMLParser.getInstance().parserXml(paraFile);
         System.out.println("the paraMap is" + paraMap);
 
