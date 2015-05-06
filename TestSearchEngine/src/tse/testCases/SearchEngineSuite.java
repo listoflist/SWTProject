@@ -76,18 +76,18 @@ public class SearchEngineSuite extends SeleneseTestCase {
 //        testBing.setXmlClasses(bingClasses);
         
          //mail login tag
-         XmlTest testMailLogin = new XmlTest(suite);
-         testMailLogin.setName("Test Mail Login");
-         List<XmlClass> mailLoginClasses = new ArrayList<XmlClass>();
-         mailLoginClasses.add(new XmlClass(TestMailLoginTestCase.class));
-         testMailLogin.setXmlClasses(mailLoginClasses);
+         // XmlTest testMailLogin = new XmlTest(suite);
+         // testMailLogin.setName("Test Mail Login");
+         // List<XmlClass> mailLoginClasses = new ArrayList<XmlClass>();
+         // mailLoginClasses.add(new XmlClass(TestMailLoginTestCase.class));
+         // testMailLogin.setXmlClasses(mailLoginClasses);
         
-//       //mail send tag
-//        XmlTest testMailSend = new XmlTest(suite);
-//        testMailSend.setName("Test Mail Send");
-//        List<XmlClass> mailSendClasses = new ArrayList<XmlClass>();
-//        mailSendClasses.add(new XmlClass(TestMailSendTestCase.class));
-//        testMailSend.setXmlClasses(mailSendClasses);
+      //mail send tag
+       XmlTest testMailSend = new XmlTest(suite);
+       testMailSend.setName("Test Mail Send");
+       List<XmlClass> mailSendClasses = new ArrayList<XmlClass>();
+       mailSendClasses.add(new XmlClass(TestMailSendTestCase.class));
+       testMailSend.setXmlClasses(mailSendClasses);
         
         
         List<XmlSuite> suites = new ArrayList<XmlSuite>();

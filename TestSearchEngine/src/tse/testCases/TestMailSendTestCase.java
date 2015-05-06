@@ -54,7 +54,7 @@ public class TestMailSendTestCase extends SeleneseTestCase {
         tgTasks.typeMailField(paraMap);
         tgTasks.clickSendBtn();
         //tgTasks.verifyResult(paraMap);
-        //utils.pause(10000);
+        Thread.sleep(5000);
     }
     
     @AfterClass
