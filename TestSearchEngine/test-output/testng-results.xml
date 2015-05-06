@@ -2,31 +2,31 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Test Search Engine" duration-ms="20294" started-at="2015-05-06T21:10:03Z" finished-at="2015-05-06T21:10:23Z">
+  <suite name="Test Search Engine" duration-ms="24924" started-at="2015-05-06T21:48:54Z" finished-at="2015-05-06T21:49:18Z">
     <groups>
     </groups>
-    <test name="Test Mail Send" duration-ms="20294" started-at="2015-05-06T21:10:03Z" finished-at="2015-05-06T21:10:23Z">
-      <class name="tse.testCases.TestMailSendTestCase">
-        <test-method status="PASS" signature="setup()[pri:0, instance:null(tse.testCases.TestMailSendTestCase)]" name="setup" is-config="true" duration-ms="10209" started-at="2015-05-06T16:10:03Z" finished-at="2015-05-06T16:10:13Z">
+    <test name="Test Mail Delete" duration-ms="24924" started-at="2015-05-06T21:48:54Z" finished-at="2015-05-06T21:49:18Z">
+      <class name="tse.testCases.TestMailDeleteTestCase">
+        <test-method status="PASS" signature="setup()[pri:0, instance:null(tse.testCases.TestMailDeleteTestCase)]" name="setup" is-config="true" duration-ms="12301" started-at="2015-05-06T16:48:54Z" finished-at="2015-05-06T16:49:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="testMailSend(java.lang.String)[pri:0, instance:null(tse.testCases.TestMailSendTestCase)]" name="testMailSend" duration-ms="9554" started-at="2015-05-06T16:10:13Z" finished-at="2015-05-06T16:10:22Z">
+        <test-method status="PASS" signature="testMailDelete(java.lang.String)[pri:0, instance:null(tse.testCases.TestMailDeleteTestCase)]" name="testMailDelete" duration-ms="11888" started-at="2015-05-06T16:49:06Z" finished-at="2015-05-06T16:49:18Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[/resources/mail_send_para_1.xml]]>
+                <![CDATA[/resources/mail_login_para_1.xml]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testMailSend -->
-        <test-method status="PASS" signature="stop()[pri:0, instance:null(tse.testCases.TestMailSendTestCase)]" name="stop" is-config="true" duration-ms="511" started-at="2015-05-06T16:10:22Z" finished-at="2015-05-06T16:10:23Z">
+        </test-method> <!-- testMailDelete -->
+        <test-method status="PASS" signature="stop()[pri:0, instance:null(tse.testCases.TestMailDeleteTestCase)]" name="stop" is-config="true" duration-ms="697" started-at="2015-05-06T16:49:18Z" finished-at="2015-05-06T16:49:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stop -->
-      </class> <!-- tse.testCases.TestMailSendTestCase -->
-    </test> <!-- Test Mail Send -->
+      </class> <!-- tse.testCases.TestMailDeleteTestCase -->
+    </test> <!-- Test Mail Delete -->
   </suite> <!-- Test Search Engine -->
 </testng-results>

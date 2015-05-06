@@ -86,6 +86,25 @@ public class TestMailTasks {
                 .get(TestMailConstants.MAIL_SEND_ACTION));
     }
     
+    //click checkbox of the first mail in inbox
+    public void clickCheckBox() {
+        stc.verifyTrue(utils.waitForElement((String) elemMap
+                .get(TestMailConstants.MAIL_CHECK_BOX), 30));
+        selenium.click((String) elemMap
+                .get(TestMailConstants.MAIL_CHECK_BOX));
+    }
+    
+    //click delete, using mouseDown mouseUp
+    public void clickDelete() {
+        stc.verifyTrue(utils.waitForElement((String) elemMap
+                .get(TestMailConstants.MAIL_DELETE_BTN), 30));
+        selenium.mouseDown((String) elemMap
+                .get(TestMailConstants.MAIL_DELETE_BTN));
+        stc.verifyTrue(utils.waitForElement((String) elemMap
+                .get(TestMailConstants.MAIL_DELETE_BTN), 30));
+        selenium.mouseUp((String) elemMap
+                .get(TestMailConstants.MAIL_DELETE_BTN));
+    }
     // public void verifyResult(HashMap<String, Object> paraMap) {
     //     stc.verifyTrue(selenium.isTextPresent((String) paraMap
     //             .get(TestMailConstants.VERIFY_STRING)));

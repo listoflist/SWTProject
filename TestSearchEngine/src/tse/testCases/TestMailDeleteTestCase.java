@@ -16,7 +16,7 @@ import tse.tasks.TestMailTasks;
 import tse.utilities.SeleniumUtils;
 import tse.utilities.XMLParser;
 
-public class TestMailSendTestCase extends SeleneseTestCase {
+public class TestMailDeleteTestCase extends SeleneseTestCase {
 
     private HashMap<String, Object> paraMap;
 
@@ -39,22 +39,21 @@ public class TestMailSendTestCase extends SeleneseTestCase {
         tgTasks = new TestMailTasks(utils);
     }
 
-    @Parameters( { "mail_send_para_1" })
+    @Parameters( { "mail_login_para_1" }) //still using login para
     @Test
-    public void testMailSend(String paraFile) throws InterruptedException {
+    public void testMailDelete(String paraFile) throws InterruptedException {
         paraMap = (HashMap<String, Object>) XMLParser.getInstance().parserXml(paraFile);
         System.out.println("the paraMap is" + paraMap);
 
         tgTasks.openSite();
         tgTasks.typeLoginTxtField(paraMap);
         tgTasks.clickLoginBtn();
-        utils.pause(1000);
-        
-        tgTasks.clickComposeBtn();
-        utils.pause(1000);
-        tgTasks.typeMailField(paraMap);
-        tgTasks.clickSendBtn();
         //tgTasks.verifyResult(paraMap);
+        utils.pause(3000);
+
+        tgTasks.clickCheckBox();
+        tgTasks.clickDelete();
+        
         Thread.sleep(5000);
     }
     
