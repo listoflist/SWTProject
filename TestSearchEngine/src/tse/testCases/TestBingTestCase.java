@@ -10,6 +10,7 @@ import org.testng.annotations.Test;
 
 import com.thoughtworks.selenium.DefaultSelenium;
 import com.thoughtworks.selenium.SeleneseTestCase;
+
 import tse.tasks.TestBingTasks;
 import tse.utilities.SeleniumUtils;
 import tse.utilities.XMLParser;

@@ -2,27 +2,27 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Test Search Engine" duration-ms="18542" started-at="2015-05-04T05:22:24Z" finished-at="2015-05-04T05:22:43Z">
+  <suite name="Test Search Engine" duration-ms="22547" started-at="2015-05-06T20:45:06Z" finished-at="2015-05-06T20:45:28Z">
     <groups>
     </groups>
-    <test name="Test Mail Login" duration-ms="18542" started-at="2015-05-04T05:22:24Z" finished-at="2015-05-04T05:22:43Z">
+    <test name="Test Mail Login" duration-ms="22547" started-at="2015-05-06T20:45:06Z" finished-at="2015-05-06T20:45:28Z">
       <class name="tse.testCases.TestMailLoginTestCase">
-        <test-method status="PASS" signature="setup()[pri:0, instance:null(tse.testCases.TestMailLoginTestCase)]" name="setup" is-config="true" duration-ms="6269" started-at="2015-05-04T00:22:24Z" finished-at="2015-05-04T00:22:31Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:null(tse.testCases.TestMailLoginTestCase)]" name="setup" is-config="true" duration-ms="9972" started-at="2015-05-06T15:45:06Z" finished-at="2015-05-06T15:45:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="testMailLogin(java.lang.String)[pri:0, instance:null(tse.testCases.TestMailLoginTestCase)]" name="testMailLogin" duration-ms="12041" started-at="2015-05-04T00:22:31Z" finished-at="2015-05-04T00:22:43Z">
+        <test-method status="PASS" signature="testMailLogin(java.lang.String)[pri:0, instance:null(tse.testCases.TestMailLoginTestCase)]" name="testMailLogin" duration-ms="12100" started-at="2015-05-06T15:45:16Z" finished-at="2015-05-06T15:45:28Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[/resources/mail_login_se_para_1.xml]]>
+                <![CDATA[/resources/mail_login_para_1.xml]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMailLogin -->
-        <test-method status="PASS" signature="stop()[pri:0, instance:null(tse.testCases.TestMailLoginTestCase)]" name="stop" is-config="true" duration-ms="213" started-at="2015-05-04T00:22:43Z" finished-at="2015-05-04T00:22:43Z">
+        <test-method status="PASS" signature="stop()[pri:0, instance:null(tse.testCases.TestMailLoginTestCase)]" name="stop" is-config="true" duration-ms="455" started-at="2015-05-06T15:45:28Z" finished-at="2015-05-06T15:45:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stop -->

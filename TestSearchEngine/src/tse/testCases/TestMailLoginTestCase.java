@@ -10,7 +10,8 @@ import org.testng.annotations.Test;
 
 import com.thoughtworks.selenium.DefaultSelenium;
 import com.thoughtworks.selenium.SeleneseTestCase;
-import tse.tasks.TestMailLoginTasks;
+
+import tse.tasks.TestMailTasks;
 import tse.utilities.SeleniumUtils;
 import tse.utilities.XMLParser;
 
@@ -18,7 +19,7 @@ public class TestMailLoginTestCase extends SeleneseTestCase {
 
     private HashMap<String, Object> paraMap;
 
-    private TestMailLoginTasks      tgTasks;
+    private TestMailTasks           tgTasks;
 
     private SeleniumUtils           utils;
 
@@ -34,20 +35,19 @@ public class TestMailLoginTestCase extends SeleneseTestCase {
         System.out.println("Starting selenium.");
         selenium.start();
         utils = new SeleniumUtils(selenium);
-        tgTasks = new TestMailLoginTasks(utils);
+        tgTasks = new TestMailTasks(utils);
     }
 
-    @Parameters( { "mail_login_se_para_1" })
+    @Parameters( { "mail_login_para_1" })
     @Test
     public void testMailLogin(String paraFile) {
-        paraMap = (HashMap<String, Object>) XMLParser.getInstance()
-                .parserXml(paraFile);
+        paraMap = (HashMap<String, Object>) XMLParser.getInstance().parserXml(paraFile);
         System.out.println("the paraMap is" + paraMap);
 
         tgTasks.openSite();
         tgTasks.typeLoginTxtField(paraMap);
         tgTasks.clickLoginBtn();
-        tgTasks.verifyResult(paraMap);
+        //tgTasks.verifyResult(paraMap);
         utils.pause(10000);
     }
     

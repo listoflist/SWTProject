@@ -10,8 +10,8 @@ import org.testng.annotations.Test;
 
 import com.thoughtworks.selenium.DefaultSelenium;
 import com.thoughtworks.selenium.SeleneseTestCase;
-import tse.tasks.TestMailLoginTasks;
-import tse.tasks.TestMailSendTasks;
+
+import tse.tasks.TestMailTasks;
 import tse.utilities.SeleniumUtils;
 import tse.utilities.XMLParser;
 
@@ -19,7 +19,7 @@ public class TestMailSendTestCase extends SeleneseTestCase {
 
     private HashMap<String, Object> paraMap;
 
-    private TestMailSendTasks      tgTasks;
+    private TestMailTasks           tgTasks;
 
     private SeleniumUtils           utils;
 
@@ -30,24 +30,27 @@ public class TestMailSendTestCase extends SeleneseTestCase {
     @BeforeClass
     public void setup() {
         selenium = new DefaultSelenium("localhost", 4444, "*firefox",
-                "https://accounts.google.com/");
+        		"https://mail.google.com/");
+        	//                "https://accounts.google.com/");
         System.out.println("Starting selenium.");
         selenium.start();
         utils = new SeleniumUtils(selenium);
-        tgTasks = new TestMailSendTasks(utils);
+        tgTasks = new TestMailTasks(utils);
     }
 
-    @Parameters( { "mail_send_se_para_1" })
+    @Parameters( { "mail_send_para_1" })
     @Test
-    public void testMailSend(String paraFile) {
-        paraMap = (HashMap<String, Object>) XMLParser.getInstance()
-                .parserXml(paraFile);
+    public void testMailLogin(String paraFile) {
+        paraMap = (HashMap<String, Object>) XMLParser.getInstance().parserXml(paraFile);
         System.out.println("the paraMap is" + paraMap);
 
         tgTasks.openSite();
         tgTasks.typeLoginTxtField(paraMap);
         tgTasks.clickLoginBtn();
-        tgTasks.clickCompose();
+        utils.pause(1000);
+        
+        tgTasks.clickComposeBtn();
+        utils.pause(1000);
         tgTasks.typeMailField(paraMap);
         tgTasks.clickSendBtn();
         //tgTasks.verifyResult(paraMap);

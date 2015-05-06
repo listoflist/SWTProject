@@ -51,7 +51,8 @@ public class SearchEngineSuite extends SeleneseTestCase {
         para.put("google_se_para_2", "/resources/google_se_para_2.xml");
         para.put("baidu_se_para_1", "/resources/baidu_se_para_1.xml");
         para.put("bing_se_para_1", "/resources/bing_se_para_1.xml");
-        para.put("mail_login_se_para_1", "/resources/mail_login_se_para_1.xml");
+        para.put("mail_login_para_1", "/resources/mail_login_para_1.xml");
+        para.put("mail_send_para_1", "/resources/mail_send_para_1.xml");
         suite.setParameters(para);
 //        //google test tag
 //        XmlTest testGoogle = new XmlTest(suite);
@@ -74,19 +75,20 @@ public class SearchEngineSuite extends SeleneseTestCase {
 //        bingClasses.add(new XmlClass(TestBingTestCase.class));
 //        testBing.setXmlClasses(bingClasses);
         
-        //mail login tag
-        XmlTest testMailLogin = new XmlTest(suite);
-        testMailLogin.setName("Test Mail Login");
-        List<XmlClass> mailLoginClasses = new ArrayList<XmlClass>();
-        mailLoginClasses.add(new XmlClass(TestMailLoginTestCase.class));
-        testMailLogin.setXmlClasses(mailLoginClasses);
+         //mail login tag
+         XmlTest testMailLogin = new XmlTest(suite);
+         testMailLogin.setName("Test Mail Login");
+         List<XmlClass> mailLoginClasses = new ArrayList<XmlClass>();
+         mailLoginClasses.add(new XmlClass(TestMailLoginTestCase.class));
+         testMailLogin.setXmlClasses(mailLoginClasses);
         
-//        //mail send tag
+//       //mail send tag
 //        XmlTest testMailSend = new XmlTest(suite);
 //        testMailSend.setName("Test Mail Send");
 //        List<XmlClass> mailSendClasses = new ArrayList<XmlClass>();
-//        mailSendClasses.add(new XmlClass(TestMailLoginTestCase.class));
+//        mailSendClasses.add(new XmlClass(TestMailSendTestCase.class));
 //        testMailSend.setXmlClasses(mailSendClasses);
+        
         
         List<XmlSuite> suites = new ArrayList<XmlSuite>();
         suites.add(suite);

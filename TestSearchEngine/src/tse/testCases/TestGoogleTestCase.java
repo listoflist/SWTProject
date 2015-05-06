@@ -30,7 +30,7 @@ public class TestGoogleTestCase extends SeleneseTestCase {
     @BeforeClass
     public void setup() {
         selenium = new DefaultSelenium("localhost", 4444, "*firefox",
-                "http://www.google.com");
+                                       "http://www.google.com");
         System.out.println("Starting selenium.");
         selenium.start();
         utils = new SeleniumUtils(selenium);
