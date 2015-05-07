@@ -96,9 +96,6 @@ public class TestMailTasks {
     
     //click delete, using mouseDown mouseUp
     public void clickDelete() {
-        assertTrue(selenium.getTitle().matches("^Inbox[\\s\\S]*$"));
-        String totalEmailBeforeDelete = selenium.getText("//span[@class='Dj']/b[3]");
-        
         stc.verifyTrue(utils.waitForElement((String) elemMap
                 .get(TestMailConstants.MAIL_DELETE_BTN), 30));
         selenium.mouseDown((String) elemMap
@@ -108,6 +105,34 @@ public class TestMailTasks {
         selenium.mouseUp((String) elemMap
                 .get(TestMailConstants.MAIL_DELETE_BTN));
     }
+
+    //type search box
+    public void typeSearchTxtField(HashMap<String, Object> paraMap) {
+        System.out.println("the elemMap is" + elemMap + "..............");
+        stc.verifyTrue(utils.waitForElement((String) elemMap
+                .get(TestMailConstants.MAIL_SEARCH_TXT_FIELD_1), 30));
+        selenium.type((String) elemMap
+                .get(TestMailConstants.MAIL_SEARCH_TXT_FIELD_1),
+                (String) paraMap
+                        .get(TestMailConstants.MAIL_SEARCH_TXT_FIELD_1));
+    }
+    
+    //click search button
+    public void clickSearchBtn() {
+        stc.verifyTrue(utils.waitForElement((String) elemMap
+                .get(TestMailConstants.MAIL_SEARCH_BTN), 30));
+        selenium.click((String) elemMap
+                .get(TestMailConstants.MAIL_SEARCH_BTN));
+    }
+
+    //get total emails at present
+    public int getTotalEmails() {
+        // String totalEmails = selenium.getText((String) elemMap
+        //                     .get(TestMailConstants.MAIL_TOATL_VALUE));//"//span[@class='Dj']/b[3]");
+        // return Integer.parseInt(totalEmails);
+        return 0;
+    }
+
     // public void verifyResult(HashMap<String, Object> paraMap) {
     //     stc.verifyTrue(selenium.isTextPresent((String) paraMap
     //             .get(TestMailConstants.VERIFY_STRING)));

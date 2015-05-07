@@ -53,6 +53,7 @@ public class SearchEngineSuite extends SeleneseTestCase {
         para.put("bing_se_para_1", "/resources/bing_se_para_1.xml");
         para.put("mail_login_para_1", "/resources/mail_login_para_1.xml");
         para.put("mail_send_para_1", "/resources/mail_send_para_1.xml");
+        para.put("mail_search_para_1", "/resources/mail_search_para_1.xml");
         suite.setParameters(para);
 //        //google test tag
 //        XmlTest testGoogle = new XmlTest(suite);
@@ -89,14 +90,21 @@ public class SearchEngineSuite extends SeleneseTestCase {
         // mailSendClasses.add(new XmlClass(TestMailSendTestCase.class));
         // testMailSend.setXmlClasses(mailSendClasses);
 
-        //mail delete tag
-        XmlTest testMailDelete = new XmlTest(suite);
-        testMailDelete.setName("Test Mail Delete");
-        List<XmlClass> mailDeleteClasses = new ArrayList<XmlClass>();
-        mailDeleteClasses.add(new XmlClass(TestMailDeleteTestCase.class));
-        testMailDelete.setXmlClasses(mailDeleteClasses);
+        // //mail delete tag
+        // XmlTest testMailDelete = new XmlTest(suite);
+        // testMailDelete.setName("Test Mail Delete");
+        // List<XmlClass> mailDeleteClasses = new ArrayList<XmlClass>();
+        // mailDeleteClasses.add(new XmlClass(TestMailDeleteTestCase.class));
+        // testMailDelete.setXmlClasses(mailDeleteClasses);
 
+        // //mail search tag
+        XmlTest testMailSearch = new XmlTest(suite);
+        testMailSearch.setName("Test Mail Search");
+        List<XmlClass> mailSearchClasses = new ArrayList<XmlClass>();
+        mailSearchClasses.add(new XmlClass(TestMailSearchTestCase.class));
+        testMailSearch.setXmlClasses(mailSearchClasses);
 
+        
         List<XmlSuite> suites = new ArrayList<XmlSuite>();
         suites.add(suite);
         TestNG tng = new TestNG();

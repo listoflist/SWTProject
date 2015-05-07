@@ -101,7 +101,7 @@
                     <div class="method-list-content passed suite-Test_Search_Engine">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Test_Search_Engine" title="tse.testCases.TestMailDeleteTestCase" hash-for-method="testMailDelete(/resources/mail_login_para_1.xml)">testMailDelete(/resources/mail_login_para_1.xml)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Search_Engine" title="tse.testCases.TestMailSearchTestCase" hash-for-method="testMailSearch(/resources/mail_search_para_1.xml)">testMailSearch(/resources/mail_search_para_1.xml)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Test_Search_Engine -->
@@ -119,15 +119,15 @@
           <div class="suite-Test_Search_Engine-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">tse.testCases.TestMailDeleteTestCase</span>
+              <span class="class-name">tse.testCases.TestMailSearchTestCase</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testMailDelete(/resources/mail_login_para_1.xml)">
-                  </a> <!-- testMailDelete(/resources/mail_login_para_1.xml) -->
-                  <span class="method-name">testMailDelete</span>
-                  <span class="parameters">(/resources/mail_login_para_1.xml)</span>
+                  <a name="testMailSearch(/resources/mail_search_para_1.xml)">
+                  </a> <!-- testMailSearch(/resources/mail_search_para_1.xml) -->
+                  <span class="method-name">testMailSearch</span>
+                  <span class="parameters">(/resources/mail_search_para_1.xml)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -141,17 +141,18 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Test Search Engine&quot;&gt;
+  &lt;parameter name=&quot;mail_search_para_1&quot; value=&quot;/resources/mail_search_para_1.xml&quot;/&gt;
   &lt;parameter name=&quot;baidu_se_para_1&quot; value=&quot;/resources/baidu_se_para_1.xml&quot;/&gt;
   &lt;parameter name=&quot;google_se_para_1&quot; value=&quot;/resources/google_se_para_1.xml&quot;/&gt;
   &lt;parameter name=&quot;google_se_para_2&quot; value=&quot;/resources/google_se_para_2.xml&quot;/&gt;
   &lt;parameter name=&quot;mail_send_para_1&quot; value=&quot;/resources/mail_send_para_1.xml&quot;/&gt;
   &lt;parameter name=&quot;mail_login_para_1&quot; value=&quot;/resources/mail_login_para_1.xml&quot;/&gt;
   &lt;parameter name=&quot;bing_se_para_1&quot; value=&quot;/resources/bing_se_para_1.xml&quot;/&gt;
-  &lt;test name=&quot;Test Mail Delete&quot;&gt;
+  &lt;test name=&quot;Test Mail Search&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;tse.testCases.TestMailDeleteTestCase&quot;/&gt;
+      &lt;class name=&quot;tse.testCases.TestMailSearchTestCase&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Test Mail Delete --&gt;
+  &lt;/test&gt; &lt;!-- Test Mail Search --&gt;
 &lt;/suite&gt; &lt;!-- Test Search Engine --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -163,7 +164,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test Mail Delete (1 class)</span>
+                <span class="test-name">Test Mail Search (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -191,14 +192,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testMailDelete')
-data.setCell(0, 2, 'tse.testCases.TestMailDeleteTestCase')
-data.setCell(0, 3, 12603);
+data.setCell(0, 1, 'testMailSearch')
+data.setCell(0, 2, 'tse.testCases.TestMailSearchTestCase')
+data.setCell(0, 3, 18962);
 window.suiteTableData['Test_Search_Engine']= { tableData: data, tableDiv: 'times-div-Test_Search_Engine'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 12 seconds</span>
+              <span class="suite-total-time">Total running time: 18 seconds</span>
               <div id="times-div-Test_Search_Engine">
               </div> <!-- times-div-Test_Search_Engine -->
             </div> <!-- times-div -->
@@ -224,18 +225,18 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">tse.testCases.TestMailDeleteTestCase</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">tse.testCases.TestMailSearchTestCase</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">testMailDelete(/resources/mail_login_para_1.xml)</span>
-                <span class="method-start">13038 ms</span>
+                <span class="method-name">testMailSearch(/resources/mail_search_para_1.xml)</span>
+                <span class="method-start">14370 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">stop</span>
-                <span class="method-start">25642 ms</span>
+                <span class="method-start">33333 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

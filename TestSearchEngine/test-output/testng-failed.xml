@@ -2,20 +2,21 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Test Search Engine]">
   <parameter name="baidu_se_para_1" value="/resources/baidu_se_para_1.xml"/>
+  <parameter name="mail_search_para_1" value="/resources/mail_search_para_1.xml"/>
   <parameter name="google_se_para_1" value="/resources/google_se_para_1.xml"/>
   <parameter name="google_se_para_2" value="/resources/google_se_para_2.xml"/>
   <parameter name="mail_login_para_1" value="/resources/mail_login_para_1.xml"/>
   <parameter name="mail_send_para_1" value="/resources/mail_send_para_1.xml"/>
   <parameter name="bing_se_para_1" value="/resources/bing_se_para_1.xml"/>
-  <test name="Test Mail Send(failed)">
+  <test name="Test Mail Search(failed)">
     <classes>
-      <class name="tse.testCases.TestMailSendTestCase">
+      <class name="tse.testCases.TestMailSearchTestCase">
         <methods>
-          <include name="testMailLogin"/>
-          <include name="stop"/>
+          <include name="testMailSearch" invocation-numbers="0"/>
           <include name="setup"/>
+          <include name="stop"/>
         </methods>
-      </class> <!-- tse.testCases.TestMailSendTestCase -->
+      </class> <!-- tse.testCases.TestMailSearchTestCase -->
     </classes>
-  </test> <!-- Test Mail Send(failed) -->
+  </test> <!-- Test Mail Search(failed) -->
 </suite> <!-- Failed suite [Test Search Engine] -->
