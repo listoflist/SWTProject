@@ -96,6 +96,9 @@ public class TestMailTasks {
     
     //click delete, using mouseDown mouseUp
     public void clickDelete() {
+        assertTrue(selenium.getTitle().matches("^Inbox[\\s\\S]*$"));
+        String totalEmailBeforeDelete = selenium.getText("//span[@class='Dj']/b[3]");
+        
         stc.verifyTrue(utils.waitForElement((String) elemMap
                 .get(TestMailConstants.MAIL_DELETE_BTN), 30));
         selenium.mouseDown((String) elemMap
