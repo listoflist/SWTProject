@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,7 +37,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Test_Search_Engine">
-              <span class="suite-name border-failed">Test Search Engine</span>
+              <span class="suite-name border-passed">Test Search Engine</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -90,21 +90,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Test_Search_Engine" class="hide-methods failed suite-Test_Search_Engine"> (hide)</a> <!-- hide-methods failed suite-Test_Search_Engine -->
-                      <a href="#" panel-name="suite-Test_Search_Engine" class="show-methods failed suite-Test_Search_Engine"> (show)</a> <!-- show-methods failed suite-Test_Search_Engine -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Test_Search_Engine" class="hide-methods passed suite-Test_Search_Engine"> (hide)</a> <!-- hide-methods passed suite-Test_Search_Engine -->
+                      <a href="#" panel-name="suite-Test_Search_Engine" class="show-methods passed suite-Test_Search_Engine"> (show)</a> <!-- show-methods passed suite-Test_Search_Engine -->
                     </span>
-                    <div class="method-list-content failed suite-Test_Search_Engine">
+                    <div class="method-list-content passed suite-Test_Search_Engine">
                       <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Test_Search_Engine" title="tse.testCases.TestMailLoginTestCase" hash-for-method="testMailLogin(/resources/mail_login_para_1.xml)">testMailLogin(/resources/mail_login_para_1.xml)</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Search_Engine" title="tse.testCases.TestMailSearchTestCase" hash-for-method="testMailSearch(/resources/mail_search_para_1.xml)">testMailSearch(/resources/mail_search_para_1.xml)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-Test_Search_Engine -->
+                    </div> <!-- method-list-content passed suite-Test_Search_Engine -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -116,38 +116,22 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Test_Search_Engine" class="panel Test_Search_Engine">
-          <div class="suite-Test_Search_Engine-class-failed">
+          <div class="suite-Test_Search_Engine-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">tse.testCases.TestMailLoginTestCase</span>
+              <img src="passed.png"/>
+              <span class="class-name">tse.testCases.TestMailSearchTestCase</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testMailLogin(/resources/mail_login_para_1.xml)">
-                  </a> <!-- testMailLogin(/resources/mail_login_para_1.xml) -->
-                  <span class="method-name">testMailLogin</span>
-                  <span class="parameters">(/resources/mail_login_para_1.xml)</span>
-                  <div class="stack-trace">java.util.regex.PatternSyntaxException: Dangling meta character &apos;*&apos; near index 0
-*$
-^
-	at java.util.regex.Pattern.error(Unknown Source)
-	at java.util.regex.Pattern.sequence(Unknown Source)
-	at java.util.regex.Pattern.expr(Unknown Source)
-	at java.util.regex.Pattern.compile(Unknown Source)
-	at java.util.regex.Pattern.&lt;init&gt;(Unknown Source)
-	at java.util.regex.Pattern.compile(Unknown Source)
-	at java.util.regex.Pattern.matches(Unknown Source)
-	at java.lang.String.matches(Unknown Source)
-	at tse.tasks.TestMailTasks.verifyInboxTitle(TestMailTasks.java:140)
-	at tse.testCases.TestMailLoginTestCase.testMailLogin(TestMailLoginTestCase.java:53)
-	at tse.testCases.SearchEngineSuite.main(SearchEngineSuite.java:112)
-... Removed 21 stack frames
-</div> <!-- stack-trace -->
+                  <a name="testMailSearch(/resources/mail_search_para_1.xml)">
+                  </a> <!-- testMailSearch(/resources/mail_search_para_1.xml) -->
+                  <span class="method-name">testMailSearch</span>
+                  <span class="parameters">(/resources/mail_search_para_1.xml)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Test_Search_Engine-class-failed -->
+          </div> <!-- suite-Test_Search_Engine-class-passed -->
         </div> <!-- panel Test_Search_Engine -->
         <div panel-name="test-xml-Test_Search_Engine" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -164,11 +148,11 @@
   &lt;parameter name=&quot;mail_send_para_1&quot; value=&quot;/resources/mail_send_para_1.xml&quot;/&gt;
   &lt;parameter name=&quot;mail_login_para_1&quot; value=&quot;/resources/mail_login_para_1.xml&quot;/&gt;
   &lt;parameter name=&quot;bing_se_para_1&quot; value=&quot;/resources/bing_se_para_1.xml&quot;/&gt;
-  &lt;test name=&quot;Test Mail Login&quot;&gt;
+  &lt;test name=&quot;Test Mail Search&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;tse.testCases.TestMailLoginTestCase&quot;/&gt;
+      &lt;class name=&quot;tse.testCases.TestMailSearchTestCase&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Test Mail Login --&gt;
+  &lt;/test&gt; &lt;!-- Test Mail Search --&gt;
 &lt;/suite&gt; &lt;!-- Test Search Engine --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -180,7 +164,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test Mail Login (1 class)</span>
+                <span class="test-name">Test Mail Search (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -208,14 +192,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testMailLogin')
-data.setCell(0, 2, 'tse.testCases.TestMailLoginTestCase')
-data.setCell(0, 3, 13283);
+data.setCell(0, 1, 'testMailSearch')
+data.setCell(0, 2, 'tse.testCases.TestMailSearchTestCase')
+data.setCell(0, 3, 11445);
 window.suiteTableData['Test_Search_Engine']= { tableData: data, tableDiv: 'times-div-Test_Search_Engine'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 13 seconds</span>
+              <span class="suite-total-time">Total running time: 11 seconds</span>
               <div id="times-div-Test_Search_Engine">
               </div> <!-- times-div-Test_Search_Engine -->
             </div> <!-- times-div -->
@@ -241,20 +225,18 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">tse.testCases.TestMailLoginTestCase</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">tse.testCases.TestMailSearchTestCase</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">testMailLogin(/resources/mail_login_para_1.xml)</span>
-                <span class="method-start">15711 ms</span>
+                <span class="method-name">testMailSearch(/resources/mail_search_para_1.xml)</span>
+                <span class="method-start">20160 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">stop</span>
-                <span class="method-start">28994 ms</span>
+                <span class="method-start">31605 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

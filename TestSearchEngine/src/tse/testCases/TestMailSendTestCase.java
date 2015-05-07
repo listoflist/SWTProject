@@ -48,7 +48,7 @@ public class TestMailSendTestCase extends SeleneseTestCase {
         tgTasks.openSite();
         tgTasks.typeLoginTxtField(paraMap);
         tgTasks.clickLoginBtn();
-        utils.pause(1000);
+        Thread.sleep(2000);
         
         tgTasks.clickComposeBtn();
         utils.pause(1000);

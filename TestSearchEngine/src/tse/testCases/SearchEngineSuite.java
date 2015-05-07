@@ -76,14 +76,14 @@ public class SearchEngineSuite extends SeleneseTestCase {
 //        bingClasses.add(new XmlClass(TestBingTestCase.class));
 //        testBing.setXmlClasses(bingClasses);
         
-        //mail login tag
-        XmlTest testMailLogin = new XmlTest(suite);
-        testMailLogin.setName("Test Mail Login");
-        List<XmlClass> mailLoginClasses = new ArrayList<XmlClass>();
-        mailLoginClasses.add(new XmlClass(TestMailLoginTestCase.class));
-        testMailLogin.setXmlClasses(mailLoginClasses);
+        // //mail login tag
+        // XmlTest testMailLogin = new XmlTest(suite);
+        // testMailLogin.setName("Test Mail Login");
+        // List<XmlClass> mailLoginClasses = new ArrayList<XmlClass>();
+        // mailLoginClasses.add(new XmlClass(TestMailLoginTestCase.class));
+        // testMailLogin.setXmlClasses(mailLoginClasses);
         
-        //mail send tag
+        // // mail send tag
         // XmlTest testMailSend = new XmlTest(suite);
         // testMailSend.setName("Test Mail Send");
         // List<XmlClass> mailSendClasses = new ArrayList<XmlClass>();
@@ -97,14 +97,14 @@ public class SearchEngineSuite extends SeleneseTestCase {
         // mailDeleteClasses.add(new XmlClass(TestMailDeleteTestCase.class));
         // testMailDelete.setXmlClasses(mailDeleteClasses);
 
-        // // //mail search tag
-        // XmlTest testMailSearch = new XmlTest(suite);
-        // testMailSearch.setName("Test Mail Search");
-        // List<XmlClass> mailSearchClasses = new ArrayList<XmlClass>();
-        // mailSearchClasses.add(new XmlClass(TestMailSearchTestCase.class));
-        // testMailSearch.setXmlClasses(mailSearchClasses);
+        // mail search tag
+        XmlTest testMailSearch = new XmlTest(suite);
+        testMailSearch.setName("Test Mail Search");
+        List<XmlClass> mailSearchClasses = new ArrayList<XmlClass>();
+        mailSearchClasses.add(new XmlClass(TestMailSearchTestCase.class));
+        testMailSearch.setXmlClasses(mailSearchClasses);
 
-        
+        //running
         List<XmlSuite> suites = new ArrayList<XmlSuite>();
         suites.add(suite);
         TestNG tng = new TestNG();

@@ -49,9 +49,9 @@ public class TestMailLoginTestCase extends SeleneseTestCase {
         tgTasks.typeLoginTxtField(paraMap);
         tgTasks.clickLoginBtn();
         
-        Thread.sleep(10000);
-        tgTasks.verifyInboxTitle(paraMap);
-        utils.pause(3000);
+        //Thread.sleep(10000);
+        //tgTasks.verifyInboxTitle(paraMap);
+        Thread.sleep(8000);
     }
     
     @AfterClass

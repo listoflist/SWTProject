@@ -49,19 +49,19 @@ public class TestMailSearchTestCase extends SeleneseTestCase {
         tgTasks.openSite();
         tgTasks.typeLoginTxtField(paraMap);
         tgTasks.clickLoginBtn();
-        utils.pause(3000);
+        Thread.sleep(3000);
 
         tgTasks.typeSearchTxtField(paraMap);
         tgTasks.clickSearchBtn();
         
         Thread.sleep(5000);
 
-        int total = tgTasks.getTotalEmails();
-        System.out.println("Searching \"" + paraMap
-                            .get(TestMailConstants.MAIL_SEARCH_TXT_FIELD_1) +
-                            "\" , find " + total + " emails.");
+        // int total = tgTasks.getTotalEmails();
+        // System.out.println("Searching \"" + paraMap
+        //                     .get(TestMailConstants.MAIL_SEARCH_TXT_FIELD_1) +
+        //                     "\" , find " + total + " emails.");
        
-        Thread.sleep(5000);
+        // Thread.sleep(5000);
     }
     
     @AfterClass
