@@ -2,6 +2,7 @@ package tse.tasks;
 
 import java.util.HashMap;
 import java.util.Properties;
+import static org.junit.Assert.*;
 
 import com.thoughtworks.selenium.SeleneseTestCase;
 import com.thoughtworks.selenium.Selenium;
@@ -133,8 +134,10 @@ public class TestMailTasks {
         return 0;
     }
 
-    // public void verifyResult(HashMap<String, Object> paraMap) {
-    //     stc.verifyTrue(selenium.isTextPresent((String) paraMap
-    //             .get(TestMailConstants.VERIFY_STRING)));
-    // }
+    public void verifyInboxTitle(HashMap<String, Object> paraMap) {
+        // stc.verifyTrue(selenium.isTextPresent((String) paraMap
+        //         .get(TestMailConstants.VERIFY_STRING)));
+        assertTrue(selenium.getTitle().matches((String) paraMap
+                .get(TestMailConstants.VERIFY_STRING)));
+    }
 }

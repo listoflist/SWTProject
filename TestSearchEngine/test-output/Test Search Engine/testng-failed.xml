@@ -8,15 +8,15 @@
   <parameter name="mail_login_para_1" value="/resources/mail_login_para_1.xml"/>
   <parameter name="mail_send_para_1" value="/resources/mail_send_para_1.xml"/>
   <parameter name="bing_se_para_1" value="/resources/bing_se_para_1.xml"/>
-  <test name="Test Mail Search(failed)">
+  <test name="Test Mail Login(failed)">
     <classes>
-      <class name="tse.testCases.TestMailSearchTestCase">
+      <class name="tse.testCases.TestMailLoginTestCase">
         <methods>
-          <include name="testMailSearch" invocation-numbers="0"/>
-          <include name="setup"/>
+          <include name="testMailLogin" invocation-numbers="0"/>
           <include name="stop"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- tse.testCases.TestMailSearchTestCase -->
+      </class> <!-- tse.testCases.TestMailLoginTestCase -->
     </classes>
-  </test> <!-- Test Mail Search(failed) -->
+  </test> <!-- Test Mail Login(failed) -->
 </suite> <!-- Failed suite [Test Search Engine] -->

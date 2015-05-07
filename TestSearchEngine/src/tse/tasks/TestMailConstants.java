@@ -17,4 +17,6 @@ public class TestMailConstants {
 
     public static final String MAIL_SEARCH_TXT_FIELD_1 = "mailSearchTxtField1";
     public static final String MAIL_SEARCH_BTN = "mailSearchBtn";
+
+    public static final String VERIFY_STRING = "verify-String";
 }

@@ -1,6 +1,7 @@
 package tse.testCases;
 
 import java.util.HashMap;
+
 import org.openqa.selenium.server.RemoteControlConfiguration;
 import org.openqa.selenium.server.SeleniumServer;
 import org.testng.annotations.AfterClass;
@@ -40,14 +41,16 @@ public class TestMailLoginTestCase extends SeleneseTestCase {
 
     @Parameters( { "mail_login_para_1" })
     @Test
-    public void testMailLogin(String paraFile) {
+    public void testMailLogin(String paraFile) throws InterruptedException {
         paraMap = (HashMap<String, Object>) XMLParser.getInstance().parserXml(paraFile);
         System.out.println("the paraMap is" + paraMap);
 
         tgTasks.openSite();
         tgTasks.typeLoginTxtField(paraMap);
         tgTasks.clickLoginBtn();
-        //tgTasks.verifyResult(paraMap);
+        
+        Thread.sleep(10000);
+        tgTasks.verifyInboxTitle(paraMap);
         utils.pause(3000);
     }
     
