@@ -48,7 +48,7 @@ public class TestGoogleTestCase extends SeleneseTestCase {
         tgTasks.typeSearchTxtField(paraMap);
         tgTasks.clickSearchBtn();
         tgTasks.verifyResult(paraMap);
-        utils.pause(10000);
+        utils.pause(5000);
     }
     
     @Parameters( { "google_se_para_2" })
@@ -62,7 +62,7 @@ public class TestGoogleTestCase extends SeleneseTestCase {
         tgTasks.typeSearchTxtField(paraMap);
         tgTasks.clickSearchBtn();
         tgTasks.verifyResult(paraMap);
-        utils.pause(10000);
+        utils.pause(5000);
     }
     
     @AfterClass

@@ -19,4 +19,6 @@ public class TestMailConstants {
     public static final String MAIL_SEARCH_BTN = "mailSearchBtn";
 
     public static final String VERIFY_STRING = "verify-String";
+
+    //public static final int MAX_TRIAL = 10;
 }

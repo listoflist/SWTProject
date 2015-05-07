@@ -39,7 +39,7 @@ public class TestMailSendTestCase extends SeleneseTestCase {
         tgTasks = new TestMailTasks(utils);
     }
 
-    @Parameters( { "mail_send_para_1" })
+    @Parameters( { "mail_test_para_1" })
     @Test
     public void testMailSend(String paraFile) throws InterruptedException {
         paraMap = (HashMap<String, Object>) XMLParser.getInstance().parserXml(paraFile);

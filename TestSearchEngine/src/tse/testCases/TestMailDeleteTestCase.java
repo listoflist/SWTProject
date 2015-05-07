@@ -39,7 +39,7 @@ public class TestMailDeleteTestCase extends SeleneseTestCase {
         tgTasks = new TestMailTasks(utils);
     }
 
-    @Parameters( { "mail_login_para_1" }) //still using login para
+    @Parameters( { "mail_test_para_1" }) //still using login para
     @Test
     public void testMailDelete(String paraFile) throws InterruptedException {
         paraMap = (HashMap<String, Object>) XMLParser.getInstance().parserXml(paraFile);

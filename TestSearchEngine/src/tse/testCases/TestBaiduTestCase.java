@@ -47,7 +47,7 @@ public class TestBaiduTestCase extends SeleneseTestCase {
         tgTasks.typeSearchTxtField(paraMap);
         tgTasks.clickSearchBtn();
         tgTasks.verifyResult(paraMap);
-        utils.pause(10000);
+        utils.pause(5000);
     }
     
     @AfterClass

@@ -40,7 +40,7 @@ public class TestMailSearchTestCase extends SeleneseTestCase {
         tgTasks = new TestMailTasks(utils);
     }
 
-    @Parameters( { "mail_search_para_1" }) //still using search para
+    @Parameters( { "mail_test_para_1" }) //still using search para
     @Test
     public void testMailSearch(String paraFile) throws InterruptedException {
         paraMap = (HashMap<String, Object>) XMLParser.getInstance().parserXml(paraFile);

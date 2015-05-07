@@ -2,21 +2,196 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Test Search Engine]">
   <parameter name="baidu_se_para_1" value="/resources/baidu_se_para_1.xml"/>
-  <parameter name="mail_search_para_1" value="/resources/mail_search_para_1.xml"/>
+  <parameter name="mail_test_para_1" value="/resources/mail_test_para_1.xml"/>
   <parameter name="google_se_para_1" value="/resources/google_se_para_1.xml"/>
   <parameter name="google_se_para_2" value="/resources/google_se_para_2.xml"/>
-  <parameter name="mail_login_para_1" value="/resources/mail_login_para_1.xml"/>
-  <parameter name="mail_send_para_1" value="/resources/mail_send_para_1.xml"/>
   <parameter name="bing_se_para_1" value="/resources/bing_se_para_1.xml"/>
   <test name="Test Mail Login(failed)">
     <classes>
+      <class name="tse.testCases.TestBaiduTestCase">
+        <methods>
+          <include name="stop"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tse.testCases.TestBaiduTestCase -->
       <class name="tse.testCases.TestMailLoginTestCase">
         <methods>
-          <include name="testMailLogin" invocation-numbers="0"/>
+          <include name="testMailLogin"/>
           <include name="stop"/>
           <include name="setup"/>
         </methods>
       </class> <!-- tse.testCases.TestMailLoginTestCase -->
+      <class name="tse.testCases.TestGoogleTestCase">
+        <methods>
+          <include name="stop"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tse.testCases.TestGoogleTestCase -->
+      <class name="tse.testCases.TestBingTestCase">
+        <methods>
+          <include name="setup"/>
+          <include name="stop"/>
+        </methods>
+      </class> <!-- tse.testCases.TestBingTestCase -->
+      <class name="tse.testCases.TestMailDeleteTestCase">
+        <methods>
+          <include name="setup"/>
+          <include name="stop"/>
+        </methods>
+      </class> <!-- tse.testCases.TestMailDeleteTestCase -->
+      <class name="tse.testCases.TestMailSearchTestCase">
+        <methods>
+          <include name="setup"/>
+          <include name="stop"/>
+        </methods>
+      </class> <!-- tse.testCases.TestMailSearchTestCase -->
+      <class name="tse.testCases.TestMailSendTestCase">
+        <methods>
+          <include name="stop"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tse.testCases.TestMailSendTestCase -->
     </classes>
   </test> <!-- Test Mail Login(failed) -->
+  <test name="Test Mail Send(failed)">
+    <classes>
+      <class name="tse.testCases.TestMailLoginTestCase">
+        <methods>
+          <include name="stop"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tse.testCases.TestMailLoginTestCase -->
+      <class name="tse.testCases.TestBaiduTestCase">
+        <methods>
+          <include name="stop"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tse.testCases.TestBaiduTestCase -->
+      <class name="tse.testCases.TestGoogleTestCase">
+        <methods>
+          <include name="stop"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tse.testCases.TestGoogleTestCase -->
+      <class name="tse.testCases.TestBingTestCase">
+        <methods>
+          <include name="setup"/>
+          <include name="stop"/>
+        </methods>
+      </class> <!-- tse.testCases.TestBingTestCase -->
+      <class name="tse.testCases.TestMailDeleteTestCase">
+        <methods>
+          <include name="setup"/>
+          <include name="stop"/>
+        </methods>
+      </class> <!-- tse.testCases.TestMailDeleteTestCase -->
+      <class name="tse.testCases.TestMailSearchTestCase">
+        <methods>
+          <include name="setup"/>
+          <include name="stop"/>
+        </methods>
+      </class> <!-- tse.testCases.TestMailSearchTestCase -->
+      <class name="tse.testCases.TestMailSendTestCase">
+        <methods>
+          <include name="testMailSend"/>
+          <include name="stop"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tse.testCases.TestMailSendTestCase -->
+    </classes>
+  </test> <!-- Test Mail Send(failed) -->
+  <test name="Test Mail Delete(failed)">
+    <classes>
+      <class name="tse.testCases.TestMailLoginTestCase">
+        <methods>
+          <include name="stop"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tse.testCases.TestMailLoginTestCase -->
+      <class name="tse.testCases.TestBaiduTestCase">
+        <methods>
+          <include name="stop"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tse.testCases.TestBaiduTestCase -->
+      <class name="tse.testCases.TestGoogleTestCase">
+        <methods>
+          <include name="stop"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tse.testCases.TestGoogleTestCase -->
+      <class name="tse.testCases.TestBingTestCase">
+        <methods>
+          <include name="setup"/>
+          <include name="stop"/>
+        </methods>
+      </class> <!-- tse.testCases.TestBingTestCase -->
+      <class name="tse.testCases.TestMailDeleteTestCase">
+        <methods>
+          <include name="setup"/>
+          <include name="stop"/>
+          <include name="testMailDelete"/>
+        </methods>
+      </class> <!-- tse.testCases.TestMailDeleteTestCase -->
+      <class name="tse.testCases.TestMailSearchTestCase">
+        <methods>
+          <include name="setup"/>
+          <include name="stop"/>
+        </methods>
+      </class> <!-- tse.testCases.TestMailSearchTestCase -->
+      <class name="tse.testCases.TestMailSendTestCase">
+        <methods>
+          <include name="stop"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tse.testCases.TestMailSendTestCase -->
+    </classes>
+  </test> <!-- Test Mail Delete(failed) -->
+  <test name="Test Mail Search(failed)">
+    <classes>
+      <class name="tse.testCases.TestMailLoginTestCase">
+        <methods>
+          <include name="stop"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tse.testCases.TestMailLoginTestCase -->
+      <class name="tse.testCases.TestBaiduTestCase">
+        <methods>
+          <include name="stop"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tse.testCases.TestBaiduTestCase -->
+      <class name="tse.testCases.TestGoogleTestCase">
+        <methods>
+          <include name="stop"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tse.testCases.TestGoogleTestCase -->
+      <class name="tse.testCases.TestBingTestCase">
+        <methods>
+          <include name="setup"/>
+          <include name="stop"/>
+        </methods>
+      </class> <!-- tse.testCases.TestBingTestCase -->
+      <class name="tse.testCases.TestMailDeleteTestCase">
+        <methods>
+          <include name="setup"/>
+          <include name="stop"/>
+        </methods>
+      </class> <!-- tse.testCases.TestMailDeleteTestCase -->
+      <class name="tse.testCases.TestMailSendTestCase">
+        <methods>
+          <include name="stop"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tse.testCases.TestMailSendTestCase -->
+      <class name="tse.testCases.TestMailSearchTestCase">
+        <methods>
+          <include name="testMailSearch"/>
+          <include name="setup"/>
+          <include name="stop"/>
+        </methods>
+      </class> <!-- tse.testCases.TestMailSearchTestCase -->
+    </classes>
+  </test> <!-- Test Mail Search(failed) -->
 </suite> <!-- Failed suite [Test Search Engine] -->

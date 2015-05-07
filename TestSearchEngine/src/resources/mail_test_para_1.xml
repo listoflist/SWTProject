@@ -7,6 +7,16 @@
 	<arg id="mailLoginTxtField2">
 	    <value>swtesting</value>   
 	</arg>
+	<arg id="mailSearchTxtField1">
+	    <value>test</value>   
+	</arg>
+	<arg id="mailAddress">
+	    <value>seleniumtesting@outlook.com</value>   
+	</arg>
+	<arg id="mailTitle">
+	    <value>Testing title</value>   
+	</arg>
+	
 	<arg id="verify-String">
 		<value>^Inbox[\\s\\S]*$</value>
 	</arg>

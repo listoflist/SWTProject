@@ -44,37 +44,38 @@ public class SearchEngineSuite extends SeleneseTestCase {
         //suite tag
         XmlSuite suite = new XmlSuite();
         // set suite name
-        suite.setName("Test Search Engine");
+        suite.setName("Test Search Engine and Gmail");
         // set parameter tag
         HashMap para = new HashMap();
         para.put("google_se_para_1", "/resources/google_se_para_1.xml");
         para.put("google_se_para_2", "/resources/google_se_para_2.xml");
         para.put("baidu_se_para_1", "/resources/baidu_se_para_1.xml");
         para.put("bing_se_para_1", "/resources/bing_se_para_1.xml");
-        para.put("mail_login_para_1", "/resources/mail_login_para_1.xml");
-        para.put("mail_send_para_1", "/resources/mail_send_para_1.xml");
-        para.put("mail_search_para_1", "/resources/mail_search_para_1.xml");
+        //para.put("mail_login_para_1", "/resources/mail_login_para_1.xml");
+        //para.put("mail_send_para_1", "/resources/mail_send_para_1.xml");
+        para.put("mail_test_para_1", "/resources/mail_test_para_1.xml");
         suite.setParameters(para);
-//        //google test tag
-//        XmlTest testGoogle = new XmlTest(suite);
-//        testGoogle.setName("Test Google");
-//        List<XmlClass> googleClasses = new ArrayList<XmlClass>();
-//        googleClasses.add(new XmlClass(TestGoogleTestCase.class));
-//        testGoogle.setXmlClasses(googleClasses);
-//        
-//        //baidu test tag
-//        XmlTest testBaidu = new XmlTest(suite);
-//        testBaidu.setName("Test Baidu");
-//        List<XmlClass> baiduClasses = new ArrayList<XmlClass>();
-//        baiduClasses.add(new XmlClass(TestBaiduTestCase.class));
-//        testBaidu.setXmlClasses(baiduClasses);
-//        
-//        //bing test tag
-//        XmlTest testBing = new XmlTest(suite);
-//        testBing.setName("Test Bing");
-//        List<XmlClass> bingClasses = new ArrayList<XmlClass>();
-//        bingClasses.add(new XmlClass(TestBingTestCase.class));
-//        testBing.setXmlClasses(bingClasses);
+
+        //google test tag
+        XmlTest testGoogle = new XmlTest(suite);
+        testGoogle.setName("Test Google");
+        List<XmlClass> googleClasses = new ArrayList<XmlClass>();
+        googleClasses.add(new XmlClass(TestGoogleTestCase.class));
+        testGoogle.setXmlClasses(googleClasses);
+
+        // //baidu test tag
+        // XmlTest testBaidu = new XmlTest(suite);
+        // testBaidu.setName("Test Baidu");
+        // List<XmlClass> baiduClasses = new ArrayList<XmlClass>();
+        // baiduClasses.add(new XmlClass(TestBaiduTestCase.class));
+        // testBaidu.setXmlClasses(baiduClasses);
+
+        // //bing test tag
+        // XmlTest testBing = new XmlTest(suite);
+        // testBing.setName("Test Bing");
+        // List<XmlClass> bingClasses = new ArrayList<XmlClass>();
+        // bingClasses.add(new XmlClass(TestBingTestCase.class));
+        // testBing.setXmlClasses(bingClasses);
         
         // //mail login tag
         // XmlTest testMailLogin = new XmlTest(suite);
@@ -82,20 +83,20 @@ public class SearchEngineSuite extends SeleneseTestCase {
         // List<XmlClass> mailLoginClasses = new ArrayList<XmlClass>();
         // mailLoginClasses.add(new XmlClass(TestMailLoginTestCase.class));
         // testMailLogin.setXmlClasses(mailLoginClasses);
-        
-        // // mail send tag
-        // XmlTest testMailSend = new XmlTest(suite);
-        // testMailSend.setName("Test Mail Send");
-        // List<XmlClass> mailSendClasses = new ArrayList<XmlClass>();
-        // mailSendClasses.add(new XmlClass(TestMailSendTestCase.class));
-        // testMailSend.setXmlClasses(mailSendClasses);
 
-        // //mail delete tag
-        // XmlTest testMailDelete = new XmlTest(suite);
-        // testMailDelete.setName("Test Mail Delete");
-        // List<XmlClass> mailDeleteClasses = new ArrayList<XmlClass>();
-        // mailDeleteClasses.add(new XmlClass(TestMailDeleteTestCase.class));
-        // testMailDelete.setXmlClasses(mailDeleteClasses);
+        // mail send tag
+        XmlTest testMailSend = new XmlTest(suite);
+        testMailSend.setName("Test Mail Send");
+        List<XmlClass> mailSendClasses = new ArrayList<XmlClass>();
+        mailSendClasses.add(new XmlClass(TestMailSendTestCase.class));
+        testMailSend.setXmlClasses(mailSendClasses);
+
+        //mail delete tag
+        XmlTest testMailDelete = new XmlTest(suite);
+        testMailDelete.setName("Test Mail Delete");
+        List<XmlClass> mailDeleteClasses = new ArrayList<XmlClass>();
+        mailDeleteClasses.add(new XmlClass(TestMailDeleteTestCase.class));
+        testMailDelete.setXmlClasses(mailDeleteClasses);
 
         // mail search tag
         XmlTest testMailSearch = new XmlTest(suite);
@@ -103,6 +104,13 @@ public class SearchEngineSuite extends SeleneseTestCase {
         List<XmlClass> mailSearchClasses = new ArrayList<XmlClass>();
         mailSearchClasses.add(new XmlClass(TestMailSearchTestCase.class));
         testMailSearch.setXmlClasses(mailSearchClasses);
+
+        // //mail test together tag
+        // XmlTest testMail = new XmlTest(suite);
+        // testMail.setName("Test Mail Functions");
+        // List<XmlClass> mailClasses = new ArrayList<XmlClass>();
+        // mailClasses.add(new XmlClass(TestMailTestCase.class));
+        // testMail.setXmlClasses(mailClasses);
 
         //running
         List<XmlSuite> suites = new ArrayList<XmlSuite>();
@@ -121,5 +129,4 @@ public class SearchEngineSuite extends SeleneseTestCase {
             SELENIUM_SERVER.stop();
         }
     }
-
 }
